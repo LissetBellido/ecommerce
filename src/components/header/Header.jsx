@@ -1,0 +1,83 @@
+import './Header.scss';
+
+function Header() {
+    return (
+        <>
+            <header className="header">
+                <div className="container-bmk">
+                    <section className="header_navegation">
+                        <span>Bienvenido a nuestra tienda virtual</span>
+                        <nav className="header_navegation_nav">
+                            <ul>
+                                <li><a className="no-subrayado" href="/marketplace">Tienda</a></li>
+                                <li><a className="no-subrayado" href="/about">Nosotros</a></li>
+                                <li><a className="no-subrayado" href="/preguntas_frecuentes">¿Cómo comprar?</a></li>
+                                <li><a className="no-subrayado" href="/preguntas_frecuentes">Preguntas frecuentes</a></li>
+                                <li><a className="no-subrayado" href="/contact">Contacto</a></li>
+                            </ul>
+                        </nav>
+                    </section>
+                    <section className="header_search">
+                        <ul className="header_search_redes">
+                            <li>
+                                <a href="https://www.facebook.com/BmkJoyasPeru/" target="_blank">
+                                    <img src="../../../assets/svg icons/icons-redes-sociales-blanco-completos/icons-facebook-blanco.svg" alt="logoFacebook" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/BmkJoyasPeru/" target="_blank">
+                                    <img src="/assets/svg icons/icons-redes-sociales-blanco-completos/icons-instagram-blanco.svg" alt="logoInstagram" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wa.pe/913010384" target="_blank">
+                                    <img src="/assets/svg icons/icons-redes-sociales-blanco-completos/whatsapp-blanco.svg" alt="logoWhatsapp" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/BmkJoyasPeru/" target="_blank">
+                                    <img src="/assets/svg icons/icons-redes-sociales-blanco-completos/messenger-blanco.svg" alt="logoMessenger" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.tiktok.com/@bmkjoyasplata950" target="_blank">
+                                    <img src="/assets/svg icons/icons-redes-sociales-blanco-completos/tiktok-blanco.svg" alt="logoTikTok" />
+                                </a>
+                            </li>
+                        </ul>
+                        <a className="header_search_a" href="/" title="BMK Joyas Perú S.A.C.">
+                            <img className="header_search_a_img" src="../assets/logo-jmk-joyas-transparente.jpeg" alt="logotipo de BMK Joyas Perú S.A.C." />
+                        </a>
+                        <ul className="header_search_buscador">
+                            <li className="search-form">
+                                <form>
+                                    <input type="search" name="search" placeholder="Buscar productos ..." />
+                                    <button>
+                                        <img src="/assets/svg icons/icons8-lupa (9).svg" alt="search" />
+                                    </button>
+                                </form>
+                            </li>
+                            <li>
+                                <a href="/pages/Login.html">
+                                    <img src="/assets/svg icons/icons-redes-sociales-blanco-completos/user-blanco.svg" alt="logo de usuario" title="Hola inicia sesión o Regístrate" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/pages/cart.html">
+                                    <img src="/assets/svg icons/icons-redes-sociales-blanco-completos/shopping-cart-blanco.svg" alt="icono del carrito de compras" title="Carrito de compras" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/pages/wishlist.html" >
+                                    <img src="/assets/svg icons/icons-redes-sociales-blanco-completos/heart-blanco.svg" alt="Lista de favoritos" title="Lista de Favoritos" />
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </header>
+        </>
+    )
+}
+
+export default Header;
