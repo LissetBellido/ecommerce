@@ -4,12 +4,12 @@ import './products.scss';
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
 import Product from '../product/product';
+
 {/* {ProductosJoyas.items.map (elem => (
 
                             ))} */}
 
 const ProductosJoyas = {
-    // path: {anillos, aretes, dijes, 'juegos', 'pulseras'},
     items: [
 
         {
@@ -256,92 +256,13 @@ const ProductosJoyas = {
 };
 const carrito = [];
 
-export default function Marketplace() {
+export default function Carrito () {
     const assetsPath = "/assets/productos";
     return (
         <>
             <Header />
 
-            <div className="container-marketplace claseMarketplace">
-
-                    <div className="rowCustomizable">
-
-                        <div className="col-xs-12 col-s-12 col-m-3 col-l-3">
-                            <h4 className= 'titulo-categ' >CATEGORIAS</h4>
-                            <hr />
-                            <ul id="menu">
-                                <li><a href="/marketplace" className="active">Pulseras</a></li>
-                                <li><a href="/marketplace">Aretes</a></li>
-                                <li><a href="/marketplace">Sortijas</a></li>
-                                <li><a href="/marketplace">Dijes</a></li>
-                                <li><a href="/marketplace">Juegos</a></li>
-                            </ul>
-                        </div>
-
-                        <div className="col-xs-12 col-s-12 col-m-9 col-l-9 contenedor-pulseras">
-
-                            <div className="rowCustomizable">
-                                <h1 className="title-products">Pulseras</h1>
-                                <div className="col-xs-12">
-
-                                    <select className="select-order">
-                                        <option>Precio más bajo</option>
-                                        <option>Precio más alto</option>
-                                        <option>Por opiniones</option>
-                                        <option>Por descuentos</option>
-                                    </select>
-
-                                </div>
-
-                                <div>
-                                    {ProductosJoyas.items.map(elem => (
-                                        <div key={elem.id} >
-                                            <div className="col-s-6 col-m-4 product-box">
-                                                <div className='product-box2'>
-                                                    <a href="/product" className="product-box">
-                                                        <div>
-                                                            <img className="img-products" src={`${assetsPath}${elem.redirect}/${elem.img}`} alt={`${elem.categoria}`} />
-                                                        </div>
-                                                        <h4 >{elem.categoria}</h4>
-                                                        <h4>{elem.title}</h4>
-                                                        <h4> {elem.peso} </h4>
-                                                        <h4>{elem.medida}</h4>
-                                                        <strong className="price"> <del><strong>{`${elem.price}`}</strong></del> <span>{` S/${elem.priceOferta}`}</span> <span className= {`${elem.offer_hidden}`}> OFF</span></strong>
-                                                    </a>
-                                                </div>
-                                                <button onClick= { () => carrito.push(elem) } className="button">
-                                                    <img className="img-logo" src="/assets/svg icons/icons-redes-sociales-blanco-completos/shopping-cart-blanco.svg" alt="Lista del Carrito de compras" title="Añadir a la lista de Compras" />
-                                                    <p>Agregar a Carrito</p>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                                                
-                                <button onClick= { () => console.log (carrito) } > Mostrar carrito </button>
-                                <div className="col-xs-12">
-                                    <ul className="pagination-marketplace">
-                                        <li><a href="/marketplace" className="active">1</a></li>
-                                        <li><a href="/marketplace">2</a></li>
-                                        <li><a href="/marketplace">3</a></li>
-                                        <li>...</li>
-                                        <li><a href="/marketplace">10</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                </div>
-
-            </div>
-
             <Footer />
         </>
     );
 }
-
-// function Carrito () {
-//     {ProductosJoyas.items.map (elem => (
-
-//                             ))} 
-// }

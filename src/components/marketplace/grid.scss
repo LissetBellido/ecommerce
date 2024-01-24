@@ -1,15 +1,12 @@
 @import '../../scss/global.scss';
 
-.claseMarketplace {
-    background-color:$color-fuente-claro;
-    
-}
 .container-marketplace {
     max-width: 1400px;
     margin: 0 auto;
 }
 // .row {
 // }
+
 .rowCustomizable::after {
     content: "";
     clear: both;

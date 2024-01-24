@@ -3,10 +3,6 @@ import Header from '../header/Header'
 import '../about/about.scss'
 import '../marketplace/grid.scss'
 
-// assets / productos /
-//     pulseras
-//     / Copia_de_P_197_Peso_10_0_gr.png
-
 //Data que se descarga de la Base de Datos
 const productosJoyas = {
     // path: {anillos, aretes, dijes, 'juegos', 'pulseras'},
