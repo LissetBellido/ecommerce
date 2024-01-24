@@ -1,9 +1,7 @@
-import './grid.scss';
-import '../logo/logo.scss';
-import './products.scss';
+// import '../logo/logo.scss';
+// import './products.scss';
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
-import Product from '../product/product';
 
 {/* {ProductosJoyas.items.map (elem => (
 
@@ -256,12 +254,18 @@ const ProductosJoyas = {
 };
 const carrito = [];
 
-export default function Carrito () {
+export default function Cart() {
     const assetsPath = "/assets/productos";
     return (
         <>
             <Header />
+                    <main className="container-bmk">
+                        <h3 className="centrar-texto h3-about">Carro de Compras</h3>
 
+                        <div>
+                            <button onClick= { () => console.log (carrito) } > Mostrar carrito </button>
+                        </div>
+                    </main>
             <Footer />
         </>
     );

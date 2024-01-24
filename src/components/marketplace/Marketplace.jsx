@@ -3,13 +3,12 @@ import '../logo/logo.scss';
 import './products.scss';
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
-import Product from '../product/product';
+import Product from '../product/Product';
 {/* {ProductosJoyas.items.map (elem => (
 
                             ))} */}
 
 const ProductosJoyas = {
-    // path: {anillos, aretes, dijes, 'juegos', 'pulseras'},
     items: [
 
         {
@@ -341,7 +340,5 @@ export default function Marketplace() {
 }
 
 // function Carrito () {
-//     {ProductosJoyas.items.map (elem => (
-
-//                             ))} 
+//     <button onClick= { () => console.log (carrito) } > Mostrar carrito </button>
 // }

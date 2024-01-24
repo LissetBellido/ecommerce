@@ -1,4 +1,4 @@
-function Cart() {
+function CartPrueba() {
     const [products, setProducts] = useState([]);
   
     const addProduct = (product) => {

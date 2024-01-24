@@ -58,17 +58,17 @@ function Header() {
                                 </form>
                             </li>
                             <li>
-                                <a href="/pages/Login.html">
+                                <a href="/Login">
                                     <img src="/assets/svg icons/icons-redes-sociales-blanco-completos/user-blanco.svg" alt="logo de usuario" title="Hola inicia sesión o Regístrate" />
                                 </a>
                             </li>
                             <li>
-                                <a href="/pages/cart.html">
-                                    <img src="/assets/svg icons/icons-redes-sociales-blanco-completos/shopping-cart-blanco.svg" alt="icono del carrito de compras" title="Carrito de compras" />
+                                <a href="/cart">
+                                    <img src="/assets/svg icons/icons-redes-sociales-blanco-completos/shopping-cart-blanco.svg" alt="icono de carro de compras" title="Carro de compras" />
                                 </a>
                             </li>
                             <li>
-                                <a href="/pages/wishlist.html" >
+                                <a href="/wishlist" >
                                     <img src="/assets/svg icons/icons-redes-sociales-blanco-completos/heart-blanco.svg" alt="Lista de favoritos" title="Lista de Favoritos" />
                                 </a>
                             </li>
