@@ -7,7 +7,7 @@ import { Cuerpo } from './components/cuerpo/Cuerpo.jsx';
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
 import { Contact } from './components/contact/Contact.jsx';
 import About from './components/about/About.jsx';
-import Product from './components/product/Product.jsx';
+import Product from './components/product/product.jsx';
 import Cart from './components/cart/cart.jsx';
 import Marketplace from './components/marketplace/Marketplace.jsx';
 
