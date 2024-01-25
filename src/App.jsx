@@ -7,7 +7,7 @@ import { Cuerpo } from './components/cuerpo/Cuerpo.jsx'
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 import { Contact } from './components/contact/Contact.jsx'
 import About from './components/about/About.jsx'
-import Product from './components/product/Product.jsx'
+// import Product from './components/product/Product.jsx'
 import Cart from './components/cart/cart.jsx';
 import Marketplace from './components/marketplace/marketplace.jsx';
 
@@ -23,7 +23,7 @@ export default function App() {
           <Route path="about" element={<About />} />
           <Route path="marketplace" element={<Marketplace />} />
           <Route path="contact" element={<Contact />} /> 
-          <Route path="product" element={<Product />} /> 
+          {/* <Route path="product" element={<Product />} /> */}
           <Route path="cart" element={<Cart />} /> 
          {/* </Route> */}
 
